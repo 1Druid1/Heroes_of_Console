@@ -1,5 +1,4 @@
 #include <iostream>
-#include <windows.h>
 #include <stdio.h>
 #include "classmodulmain.h"
 #include "WinnerAndLoser.h"
