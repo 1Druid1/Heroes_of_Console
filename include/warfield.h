@@ -2,7 +2,6 @@
 #define WARFIELD_H
 #include <stdbool.h>
 #include <time.h>
-#include <windows.h>
 #include "Bonus.h"
 #include "Bonus_A.h"
 #include "Bonus_H.h"
