@@ -2,10 +2,12 @@
 #define WARFIELD_H
 #include <stdbool.h>
 #include <time.h>
-#include "Bonus.h"
-#include "Bonus_A.h"
-#include "Bonus_H.h"
-#include "Players.h"
+#include<chrono>
+#include<thread> 
+#include "bonus.h"
+#include "bonus_a.h"
+#include "bonus_h.h"
+#include "players.h"
 #include "objectbase.h"
 #include "Interface.h"
 
@@ -479,7 +481,8 @@ class WarField
                 Field[Y][X]=' ';
                 Y+=wayY;
                 X+=wayX;
-                Sleep(150);
+				std::this_thread::sleep_for(std::chrono::milliseconds(150));
+                //Sleep(150);
                 system("cls");
                 outField();
         }
@@ -559,7 +562,8 @@ int fellowAttack(char way, char numb){
                 Y+=wayY;
                 X+=wayX;
                 Field[BASE->getHpfPointer()->getY()][BASE->getHpfPointer()->getX()]=BASE->getHpfPointer()->getIcon();
-                Sleep(20);
+				std::this_thread::sleep_for(std::chrono::milliseconds(20));
+                //Sleep(20);
                 system("cls");
                 outField();
         }

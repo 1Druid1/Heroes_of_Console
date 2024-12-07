@@ -3,7 +3,7 @@
 
 #include "bonus.h"
 #include <time.h>
-#include <windows.h>
+
 
 class Bonus_S:public Bonus
 {

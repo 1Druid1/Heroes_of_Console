@@ -2,7 +2,7 @@
 #define BONUS_H_H
 #include "bonus.h"
 #include <time.h>
-#include <windows.h>
+
 class Bonus_H:public Bonus
 {
     public:
